@@ -67,6 +67,8 @@ __host__ __device__ constexpr bool operator==(cuco::pair<T1, T2> const& lhs,
 
 }  // namespace cuco
 
-namespace hip::std {
+namespace cuda::std {
 #include <cuco/detail/pair/tuple_helpers.inl>
 }  // namespace hip::std
+
+namespace hip = cuda;
